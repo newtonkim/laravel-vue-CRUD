@@ -3,7 +3,7 @@ import { ref } from "vue"
 
 export default function useCompanies() {
 
-    const companies = ref([])
+    const companies = ref([])// this makes it reactive/dynamic
     
     const  getCompanies = async () => {
         let response = await axios.get('/api/companies')
